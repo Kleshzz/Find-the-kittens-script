@@ -29,12 +29,27 @@ local kittens = {
     {name = "Wood Kitten", pos = Vector3.new(-58.215, 23.301, -90.189)},
     {name = "Pharaoh Kitten", pos = Vector3.new(252.258, -111.544, -402.279)},
     {name = "Realistic Kitten", pos = Vector3.new(109.795, 0.689, 65.567)},
-    {name = "Troll Kitten", pos = Vector3.new(-445.621, 38.051, -195.067)}
+    {name = "Troll Kitten", pos = Vector3.new(-445.621, 38.051, -195.067)},
+    {name = "Hot Cocoa Kitten", pos = Vector3.new(80.609, 2.658, 459.46)},
+    {name = "Pinecone Kitten", pos = Vector3.new(139.54, 21.005, 383.91)},
+    {name = "Hiker Kitten", pos = Vector3.new(84.022, 128.395, 298.529)},
+    {name = "Snow Kitten", pos = Vector3.new(131.277, 77, 337.526)},
+    {name = "Cozy Kitten", pos = Vector3.new(21.811, 5.401, 378.242)},
+    {name = "Frozen Kitten", pos = Vector3.new(63.077, 1.014, 334.057)},
+    {name = "Snow Globe Kitten", pos = Vector3.new(-15.31, 70.149, 385.295)},
+    {name = "Tumbleweed Kitten", pos = Vector3.new(-16.474, 1.649, -508.515)},
+    {name = "Ice Kitten", pos = Vector3.new(141.207, 5.289, 337.255)},
+    {name = "Drawing Kitten", pos = Vector3.new(65.267, 35.276, 286.711)},
+    {name = "Biome Kitten", pos = Vector3.new(432.065, -343.041, 338.691)},
+    {name = "Evil Kitten", pos = Vector3.new(194.308, -87.99, -56.553)},
+    {name = "Leafy Kitten", pos = Vector3.new(-33.934, 25.085, 13.646)},
+    {name = "Snowman Kitten", pos = Vector3.new(59.167, 47.357, 300.634)},
+    {name = "Ancient Kitten", pos = Vector3.new(288.086, -60.169, -555.367)}
 }
 
 task.spawn(function()
     for _, kitten in ipairs(kittens) do
         hrp.CFrame = CFrame.new(kitten.pos)
-        task.wait(1.5)
+        task.wait(2)
     end
 end)
